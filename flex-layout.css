@@ -1,0 +1,114 @@
+.flex-container{
+   display: flex;
+}
+/* direction */
+.direction-row{
+   flex-direction: row;/* default */
+}
+.direction-row-reverse{
+   flex-direction: row-reverse;
+}
+.direction-column{
+   flex-direction: column;
+}
+.direction-column-reverse{
+   flex-direction: column-reverse;
+}
+/* wrap */
+.nowrap{
+  flex-wrap: nowrap;/* default */
+}
+.wrap{
+  flex-wrap: wrap;
+}
+.wrap-reverse{
+  flex-wrap: wrap-reverse;
+}
+/* justify content */
+/*
+   The justify-content property set the flex items alignment along with the main axis in each line.
+   When flex direction is row,it affect row alignment,when flex direction is column,it affect column alignment,
+   控制主轴(X轴)方向的对齐方式，row的时候控制横向，column的时候控制纵向。
+*/
+.justify-content-start{
+  justify-content: flex-start; /* default */
+}
+.justify-content-end {
+  justify-content: flex-end;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.justify-content-space-between {
+  justify-content: space-between;
+}
+.justify-content-space-around {
+  justify-content: space-around;
+}
+
+/* align items */
+/*
+   Affect each line alignment of axis that cross with main axis.
+   控制item在网格内部的对齐方式和显示方式。
+*/
+.align-items-start {
+  align-items: flex-start;
+}
+.align-items-end {
+  align-items: flex-end;
+}
+.align-items-center {
+  align-items: center;
+}
+.align-items-baseline {
+  align-items: baseline;
+}
+.align-items-stretch {
+  align-items: stretch;/* default */
+}
+
+/* align content */
+/*
+   Only affect multi-line alignment of axis that cross with main axis.
+   Just like justify-content property.
+   控制Y轴(X轴为主轴)的对齐方式，row的时候控制纵向，column的时候控制横向。没有Y轴则不起作用。
+   类似justify-content控制X轴的方式。
+*/
+.align-content-start {
+  align-content: flex-start; 
+}
+.align-content-flex-end {
+  align-content: flex-end;
+}
+.align-content-center {
+  align-content: center;
+}
+.align-content-space-between {
+  align-content: space-between;
+}
+.align-content-space-around {
+  align-content: space-around;
+}
+.align-content-stretch {
+  align-content: stretch;/* default */
+}
+
+/* Item properties */
+.align-self-auto {
+  align-self: auto; /* default */
+}
+.align-self-start {
+  align-self: flex-start; 
+}
+.align-self-end {
+  align-self: flex-end; 
+}
+.align-self-center {
+  align-self: center; 
+}
+.align-self-baseline {
+  align-self: baseline; 
+}
+.align-self-stretch {
+  align-self: stretch; 
+}
